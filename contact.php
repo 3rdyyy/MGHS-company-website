@@ -127,7 +127,9 @@
               </div>
               <div class="my-3">
                 
-              <div class="text-center"><button type="submit" name="save">Send Message</button></div>
+              <div class="text-center">
+                <button type="submit" name="save">Send Message</button>
+              </div>
             </form>
 
           </div>
