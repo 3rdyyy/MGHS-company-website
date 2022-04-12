@@ -128,7 +128,7 @@
               <div class="my-3">
                 
               <div class="text-center">
-                <button type="submit" name="submit" >Send Message</button>
+                <button type="submit" name="submit">Send Message</button>
               </div>
             </form>
 
