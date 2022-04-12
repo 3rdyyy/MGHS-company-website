@@ -1,6 +1,6 @@
 <?php
 include'db.php';
-	if(isset($_POST['save'])){
+	if(isset($_POST['submit'])){
 		$fname = $_POST['fname'];
 		$lname = $_POST['lname'];
 		$phone_no = $_POST['phone_no'];
@@ -12,7 +12,7 @@ include'db.php';
             if(performQuery($query)){
           echo "<script>alert('success')</script>" ;
     }else{
-    	echo'error';
+    	 echo "<script>alert('error')</script>" ;
     }
 	}
 ?>

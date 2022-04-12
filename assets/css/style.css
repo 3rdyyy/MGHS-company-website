@@ -706,6 +706,7 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #3ac162;
 }
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);

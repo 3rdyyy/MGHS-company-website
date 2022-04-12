@@ -128,7 +128,7 @@
               <div class="my-3">
                 
               <div class="text-center">
-                <button type="submit" name="save">Send Message</button>
+                <button type="submit" name="submit" >Send Message</button>
               </div>
             </form>
 
@@ -203,7 +203,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
