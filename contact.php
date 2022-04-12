@@ -48,7 +48,7 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="blog.html">Blog</a></li>
           
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a class="active" href="contact.php">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -104,7 +104,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="contact.php" method="post" role="form" class="php-email-form">
+            <form action="contact_form.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="fname" class="form-control" id="name" placeholder="Your First Name" required>

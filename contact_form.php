@@ -8,11 +8,11 @@ include'db.php';
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 
-		$query = "INSERT INTO `contact` (`fname`, `lname`, `phone_no`, `email`, `subject`, `message`, date) VALUES ('$fname', '$lname', '$phone_no', '$email', '$subject', '$messge', CURRENT_TIMESTAMP )";
+		$query = "INSERT INTO `contact_form` (`fname`, `lname`, `phone_no`, `email`, `subject`, `message`, date) VALUES ('$fname', '$lname', '$phone_no', '$email', '$subject', '$message', CURRENT_TIMESTAMP )";
             if(performQuery($query)){
-        echo'succes';
+          echo "<script>alert('success')</script>" ;
     }else{
-    	echo'error'
+    	echo'error';
     }
 	}
 ?>
