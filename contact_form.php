@@ -1,6 +1,6 @@
 <?php
 include'db.php';
-	if(isset($_POST['submit'])){
+	if(isset($_POST['save'])){
 		$fname = $_POST['fname'];
 		$lname = $_POST['lname'];
 		$phone_no = $_POST['phone_no'];
