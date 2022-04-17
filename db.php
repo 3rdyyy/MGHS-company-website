@@ -1,5 +1,5 @@
 <?php
-    define('DBINFO','mysql:host=127.0.0.1:3306;dbname=mghs_db');
+    define('DBINFO','mysql:host=127.0.0.1:3306;dbname=contact_formdb');
     define('DBUSER','root');
     define('DBPASS','');
 

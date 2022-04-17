@@ -1,8 +1,7 @@
 <?php
+session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-//Load Composer's autoloader
 require 'phpmailer/vendor/autoload.php';
 include'db.php';
 	if(isset($_POST['submit'])){
@@ -13,7 +12,13 @@ include'db.php';
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 
-		$query = "INSERT INTO `contact_form` (`fname`, `lname`, `phone_no`, `email`, `subject`, `message`, date) VALUES ('$fname', '$lname', '$phone_no', '$email', '$subject', '$message', CURRENT_TIMESTAMP )";
+		if ($_POST["captcha_input"] != $_SESSION["captcha"] OR $_SESSION["captcha"]=='')  {
+        echo "<script>alert('Incorrect verification code');</script>" ;
+    } 
+    	elseif 
+		 ($_POST["captcha_input"] == $_SESSION["captcha"] OR $_SESSION["captcha"]=='')  {
+
+		$query = "INSERT INTO `contact` (`fname`, `lname`, `phone_no`, `email`, `subject`, `message`, date) VALUES ('$fname', '$lname', '$phone_no', '$email', '$subject', '$message', CURRENT_TIMESTAMP )";
             if(performQuery($query)){
             	//Create an instance; passing `true` enables exceptions
 			$mail = new PHPMailer(true);
@@ -90,9 +95,11 @@ include'db.php';
 			} catch (Exception $e) {
 			  
 			}
-			          echo "<script>alert('success')</script>" ;
+			 echo "<script>alert('success')</script>" ;
+	}
 			    }else{
 			    	 echo "<script>alert('error')</script>" ;
-			    }
-				}
-			?>
+	}
+}
+
+	?>

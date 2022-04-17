@@ -24,6 +24,11 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -125,6 +130,17 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
+              <div class="form-group">
+            <input type="text" name="captcha_input" class="form-control" placeholder="Input Captcha" required="required">
+        </div>
+        <div class="form-group small clearfix">
+            <p>Captcha Code
+              <img src="captcha.php?rand=<?php echo rand(); ?>" id='captcha_image' >
+              </p>
+        <p>Can't read the image?
+        <a href='javascript: refreshCaptcha();'>click here</a>
+        to refresh</p>
+        </div> 
               <div class="my-3">
                 
               <div class="text-center">
@@ -207,7 +223,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
 
+//Refresh Captcha
+function refreshCaptcha(){
+    var img = document.images['captcha_image'];
+    img.src = img.src.substring(
+    0,img.src.lastIndexOf("?")
+    )+"?rand="+Math.random()*1000;
+}
+</script>
 </body>
-
 </html>
