@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .container {
   padding-top: 72px;
+  
 }
 @media (max-width: 992px) {
   #hero .container {
@@ -472,7 +473,7 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  background: #65c122  ;
   padding: 30px 0;
   color: #fff;
 }
@@ -528,6 +529,10 @@ section {
     margin: 0 48px 0 0;
     padding: 6px 18px;
   }
+}
+
+.btn-success{
+  background: #185c24 ;
 }
 
 
@@ -588,6 +593,7 @@ section {
   font-size: 15px;
   color: #848484;
 }
+
 
 
 
@@ -706,7 +712,7 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #3ac162;
 }
-}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -723,7 +729,33 @@ section {
     transform: rotate(360deg);
   }
 }
-
+.blog .entry .entry-content blockquote {
+  overflow: hidden;
+  background-color: #fafafa;
+  padding: 60px;
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+.blog .entry .entry-content blockquote p {
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+}
+.blog .entry .entry-content blockquote::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #012970;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1074,4 +1106,179 @@ section {
 
 group label input {
   display: none;
+}
+
+/* Sidebar
+================================================== */
+.sidebar .widget-title {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 0 30px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  border-left: 3px solid #ffb600;
+}
+
+/* Widget common */
+.sidebar .widget {
+  margin-bottom: 40px;
+}
+
+.sidebar-left .widget {
+  margin-right: 20px;
+}
+
+.sidebar-right .widget {
+  margin-left: 20px;
+}
+
+.sidebar .widget.box {
+  padding: 25px;
+}
+
+.widget.box.solid {
+  background: #f2f2f2;
+}
+
+.widget.box.red {
+  background: #ec483b;
+  color: #fff;
+}
+
+.widget.box.red .widget-title {
+  color: #fff;
+}
+
+.widget ul li {
+  line-height: 30px;
+}
+
+.sidebar .widget ul li a {
+  color: #303030;
+}
+
+.sidebar .widget ul li a:hover {
+  color: #ffb600;
+}
+
+.sidebar .widget ul li i {
+  margin-right: 5px;
+}
+
+.sidebar .btn {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 10px 25px;
+}
+
+/* Sidebar nav */
+.sidebar ul.nav-tabs {
+  border: 0;
+}
+
+.sidebar ul.nav-tabs li {
+  width: 100%;
+}
+
+.sidebar ul.nav-tabs li a {
+  color: #303030;
+  border-radius: 0;
+  padding: 15px 0;
+  padding-left: 0;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  transition: 400ms;
+}
+
+.sidebar ul.nav-tabs li.active a,
+.sidebar ul.nav-tabs li:hover a {
+  color: #ffb600;
+}
+
+.sidebar ul.nav-tabs li {
+  color: #303030;
+  line-height: normal;
+}
+
+.sidebar ul.nav-tabs li:last-child a {
+  border-bottom: 0;
+}
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #4bb543;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #4bb543;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
 }
