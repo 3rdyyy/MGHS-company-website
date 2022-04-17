@@ -13,7 +13,7 @@ include'db.php';
 		$message = $_POST['message'];
 
 		if ($_POST["captcha_input"] != $_SESSION["captcha"] OR $_SESSION["captcha"]=='')  {
-        echo "<script>alert('Incorrect verification code');</script>" ;
+        echo "<script>alert('Incorrect captcha code');</script>" ;
     } 
     	elseif 
 		 ($_POST["captcha_input"] == $_SESSION["captcha"] OR $_SESSION["captcha"]=='')  {
