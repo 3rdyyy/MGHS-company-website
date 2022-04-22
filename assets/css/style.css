@@ -1248,7 +1248,7 @@ group label input {
 .stepper-item .step-counter {
   position: relative;
   z-index: 5;
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -1264,6 +1264,8 @@ group label input {
 
 .stepper-item.completed .step-counter {
   background-color: #4bb543;
+  font-weight: bolder;
+
 }
 
 .stepper-item.completed::after {
