@@ -1213,6 +1213,7 @@ group label input {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .stepper-item {
   position: relative;
   display: flex;
@@ -1227,7 +1228,7 @@ group label input {
 
 .stepper-item::before {
   position: absolute;
-  content: "";
+
   border-bottom: 2px solid #ccc;
   width: 100%;
   top: 20px;
@@ -1237,7 +1238,7 @@ group label input {
 
 .stepper-item::after {
   position: absolute;
-  content: "";
+  content: '';
   border-bottom: 2px solid #ccc;
   width: 100%;
   top: 20px;
@@ -1256,6 +1257,7 @@ group label input {
   border-radius: 50%;
   background: #ccc;
   margin-bottom: 6px;
+  content: '';
 }
 
 .stepper-item.active {
