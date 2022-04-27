@@ -1424,20 +1424,6 @@ group label input {
   color: #a5c5fe;
   font-size: 14px;
 }
-.about-boxes::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
-  z-index: 9;
-}
-.about-boxes .container, .about-boxes .container-fluid {
-  position: relative;
-  z-index: 10;
-}
 .about-boxes .card {
   border-radius: 3px;
   border: 0;
@@ -1482,9 +1468,4 @@ group label input {
 .about-boxes .card:hover .card-icon i {
   background: #fff;
   color: #65c122;
-}
-@media (max-width: 1024px) {
-  .about-boxes {
-    background-attachment: scroll;
-  }
 }
