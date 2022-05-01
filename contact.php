@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Mentor Bootstrap Template</title>
+  <title>Contact - MGHS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -70,7 +70,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+      <!-- <a href="courses.html" class="get-started-btn">Get Started</a> -->
 
     </div>
   </header><!-- End Header -->
@@ -187,7 +187,7 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="career.html">Careers</a></li>
