@@ -1304,11 +1304,11 @@ group label input {
 }
 .specials .nav-link:hover {
   color: #185c24;
-  background: #65c122;
+  background: #5fcf80;
 }
 .specials .nav-link.active {
   color: #1a1814;
-  background: #65c122;
+  background: #5fcf80;
   border-color: #185c24;
 }
 
