@@ -107,10 +107,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            MGHS SERVICES is a one-stop-shop for startups, small & medium businesses. <br>
+            MGHS SERVICES is a one-stop-shop for startups for small & medium businesses. <br>
             We offer a range of solutions to support, enhance, and grow your business <br>
-            on its stages of conceptual, ideas generation, launching your product or services, <br>
-            and growing your home business model to an official business store.
+            on its stages of concept, idea generation, product or service launch, and  <br>
+            growing your home business model to an official business store.
             </p>
 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

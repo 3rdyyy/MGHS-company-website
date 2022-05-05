@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.center {
+  margin: auto;
+  width: 100%;
+ 
+}
 /* COOKIES */
 .cookie-banner {
   position: fixed;
@@ -50,6 +55,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   cursor: pointer;
 }
+
+
 
 
 /*--------------------------------------------------------------
