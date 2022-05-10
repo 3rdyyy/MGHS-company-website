@@ -1294,6 +1294,7 @@ group label input {
 
 .stepper-item.active {
   font-weight: bold;
+  font-style: italic;
 }
 
 .stepper-item.completed .step-counter {
