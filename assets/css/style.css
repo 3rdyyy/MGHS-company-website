@@ -1457,6 +1457,26 @@ group label input {
   color: #a5c5fe;
   font-size: 14px;
 }
+.about-boxes {
+  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+.about-boxes::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+.about-boxes .container, .about-boxes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
 .about-boxes .card {
   border-radius: 3px;
   border: 0;
@@ -1484,7 +1504,6 @@ group label input {
 .about-boxes .card-body {
   padding-top: 12px;
 }
-
 .about-boxes .card-title {
   font-weight: 700;
   text-align: center;
@@ -1493,15 +1512,21 @@ group label input {
   color: #15222b;
 }
 .about-boxes .card-title a:hover {
-  color: #65c122;
+  color: #18d26e;
 }
 .about-boxes .card-text {
   color: #5e5e5e;
 }
 .about-boxes .card:hover .card-icon i {
   background: #fff;
-  color: #65c122;
+  color: #185c24;
 }
+@media (max-width: 1024px) {
+  .about-boxes {
+    background-attachment: scroll;
+  }
+}
+
 .cookie-container{
   position: fixed;
   bottom: -100;
