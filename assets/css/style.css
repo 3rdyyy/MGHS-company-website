@@ -1516,6 +1516,7 @@ group label input {
 }
 .about-boxes .card-text {
   color: #5e5e5e;
+  font-style: italic;
 }
 .about-boxes .card:hover .card-icon i {
   background: #fff;
