@@ -115,7 +115,7 @@
           <li class="dropdown"><a href="career.html"><span>Careers</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="career_1.html">Careers at MGHS</a></li>
-              <li><a href="internship_1">internship at MGHS</a></li>
+              <li><a href="internship_1">Internships at MGHS</a></li>
               
             </ul>
           </li>
@@ -242,7 +242,7 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <h3>MGHS</h3>
+        <h3>MGHS Services</h3>
         <p>
 
           <strong>Email:</strong> info@themghs.com<br>
